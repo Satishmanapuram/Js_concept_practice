@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loops</title>
+  </head>
+  <body>
+    <script lang="javascript" type="text/javascript">
+      var i;
+      //For Loop
+      for (i = 1; i <= 10; i++) // print 1 to 10 numbers
+      {
+        document.write("i = " + i);
+        document.write("<br/>");
+      }
+
+      var j;
+      for (j = 1; j <= 10; j += 2) //for Odd numbers
+      {
+        document.write("j = " + j);
+        document.write("<br/>");
+      }
+
+      var k;
+      for (k = 1; k <= 100; k++) {
+        if (k % 2 == 0)  // for Even numbers
+        {
+          document.write("k = " + k);
+          document.write("<br/>");
+        }
+    }
+        var l;
+        var product = 1;
+        var num = parseInt(prompt("Enter a number", "Enter"))
+        for(l=1; l<=num; l++){
+            product = product * l;
+        }
+        document.write("Factorial:" + product);
+      
+    </script>
+  </body>
+</html>
