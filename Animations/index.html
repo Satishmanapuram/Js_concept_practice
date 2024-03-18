@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script lang="Javascript" type="text/Javascript">
+      var arr = new Array("../images/image1.jpg", "../images/image2.jpg", "../images/image3.jpg", "../images/image4.jpg");
+      var i = 1;
+      var ref;
+
+      function pickLibrary()
+      {
+          document.images[0].src = arr[i];
+          i++;
+          if (i > 3)
+          i = 0;
+      }
+
+      function start()
+      {
+          ref = setInterval("pickLibrary()", 2000);
+      }
+
+      function stop()
+      {
+          clearInterval(ref);
+      }
+    </script>
+  </head>
+  <body onload="start()">
+    <img
+      src="../images/image1.jpg"
+      name="img"
+      onmouseover="stop()"
+      onmouseout="start()"
+      width="400px"
+      type="cover"
+    />
+  
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Non Premitive Data Types</title>
+    <style>
+      .container h2 {
+        color: white;
+        background-color: green;
+        text-align: center;
+        border: 3px solid red;
+      }
+    </style>
+    <script>
+        // Arrays, functions and objects
+        const fruit1 = "apple";
+        const fruit2 = "banana";
+        const fruit3 = "cherries";
+        const fruit4 = "blueberries";
+        const fruit5 = "blackberries";
+
+        const fruitList = ["apple", "banana", "cherries", "blueberries", "blackberries", 5, undefined, null, true, false];
+        console.log(fruitList);
+        console.log(fruitList[0]);
+        console.log(fruitList[1]);
+
+        let bestFruit = fruitList[5];
+        console.log(bestFruit);
+
+        fruitList[4] = "sapota"; // It Rplaces Value
+        console.log(fruitList);
+    </script>
+  </head>
+  <body>
+    <div class="container"><h2>Data Types Practice</h2></div>
+  </body>
+</html>
